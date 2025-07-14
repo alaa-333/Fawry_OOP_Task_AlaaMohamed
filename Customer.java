@@ -1,6 +1,8 @@
 public class Customer implements CustomerService
 {
 
+
+
     private String name;
     private double balance;
 
@@ -17,6 +19,9 @@ public class Customer implements CustomerService
         return balance >= amount;
     }
 
+    public String getName() {
+        return name;
+    }
     @Override
     public void BalanceDeduction(double amount)
     {
